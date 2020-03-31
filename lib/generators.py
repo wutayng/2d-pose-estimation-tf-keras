@@ -1,26 +1,26 @@
 """
 Data Generators for Thirdeye Models
 """
-import tensorflow as tf
+from tensorflow.keras.utils import Sequence
 import pandas as pd
 import numpy as np
 import random
-from .utils import dataframe_to_heatmap
+from .utils import dataframe_to_mask
 
 
-class h5_generator(tf.keras.utils.Sequence) :
+class h5_generator(Sequence) :
     """
     Data Generator for h5 Input 
-    To Avoid Having to Load Complete Data in Memory
     """
   
-    def __init__(self, h5_data, batch_size, joint_input_indices, image_resolution, heatmap_std) :
+    def __init__(self, h5_data, batch_size, joint_input_indices, image_resolution, keypoint_radius) :
         """
-        param h5_data: Read in h5 File
-        param batch_size: Batch Size
-        param joint_input_indices: indices of pd Keypoints DataFrames to Compute (Ignore Others)
-        param image_resolution: resolution of image (integer)
-        param heatmap_std: pixel standard deviation of heatmap keypoint gaussian kernel
+        args:
+            h5_data:             Read in h5 File
+            batch_size:          Batch Size
+            joint_input_indices: Indices of pd Keypoints DataFrames to Compute (Ignore Others)
+            image_resolution:    Resolution of image (int)
+            keypoint_radius:     Keypoint radius for Binary Classification Loss
         """
         # Define Input h5 data
         self.h5_data = h5_data
@@ -38,7 +38,7 @@ class h5_generator(tf.keras.utils.Sequence) :
         # Define Parameters for Heatmap Creation from Coordinates
         self.joint_input_indices = joint_input_indices
         self.image_resolution = image_resolution
-        self.std = heatmap_std
+        self.radius = keypoint_radius
 
         # Parameters for __next__ function
         # :src :https://stackoverflow.com/questions/54590826/generator-typeerror-generator-object-is-not-an-iterator/57101352
@@ -65,10 +65,10 @@ class h5_generator(tf.keras.utils.Sequence) :
         keypoints_list = []
         # Loop Through Batch
         for i in range(0, self.batch_size):
-          img_list.append(self.h5_data[self.batches[idx][i]]['img'][:] / 255)
-          df = pd.DataFrame(data=self.h5_data[self.batches[idx][i]]['keypoints'][:])
-          keypoints_list.append(dataframe_to_heatmap(df, self.joint_input_indices, \
-                                                    self.image_resolution, std=self.std))
+            img_list.append(self.h5_data[self.batches[idx][i]]['img'][:] / 255)
+            df = pd.DataFrame(data=self.h5_data[self.batches[idx][i]]['keypoints'][:])
+            keypoints_list.append(dataframe_to_mask(df, self.joint_input_indices, \
+                                                    self.image_resolution, self.radius))
 
         # Stack X List into Tensor
         batch_x = np.stack(img_list, axis=0)
@@ -83,5 +83,6 @@ class h5_generator(tf.keras.utils.Sequence) :
         result = self.__getitem__(self.n)
         self.n += 1
         return result
+
 
     

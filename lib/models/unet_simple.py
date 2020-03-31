@@ -60,3 +60,5 @@ def unet_simple(input_shape, output_num):
     model = Model(inputs = inputs, outputs = conv9, name='unet_simple')
 
     return model
+
+    

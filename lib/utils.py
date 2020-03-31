@@ -5,46 +5,53 @@ import numpy as np
 from scipy.stats import multivariate_normal
 import pandas as pd
 
-    
-def dataframe_to_heatmap(df, joint_indices, resolution, std=1):
+def dataframe_to_mask(df, joint_indices, resolution, radius):
     """
-    Convert pd DataFrame of Keypoint Coordinates to Heatmap Masks
+    Convert pd DataFrame of Keypoint Coordinates to Binary Pixel Masks (Radius R Around Keypoint)
+    Center of Keypoint (Ground Truth) = 1. Keypoints in Radius = 0.9
 
-    df - keypoint coordinate dataframe, rows=coord1(x),coord1(y),coord2(x)..., cols=person1,person2,...
-    joint_indices - indices of joints to compute (via joint_names list)
-    resolution - image resolution (int)
-    std - standard deviation of heatmap keypoint gaussian kernel
-
+    args:
+        df:            Keypoint coordinate dataframe, rows=coord1(x),coord1(y),coord2(x)..., cols=person1,person2,...
+        joint_indices: Indices of joints to compute (via joint_names list)
+        resolution:    Image resolution (int)
+        radius:        Radius of Keypoint (In Pixels) set to =0.9 for Binary Classification
+        
+    return:
+        mask_array:    Resolution x Resolution np.array mask
     """
-    heatmap_list = []
+    mask_list = []
     # For Each Joint in DataFrame
     for joint in joint_indices:
-        # Initialize Heatmap Grid
-        x = np.linspace(0, int(resolution/std), resolution)
-        y = np.linspace(0, int(resolution/std), resolution)
-        xx, yy = np.meshgrid(x,y)
-        # Evaluate all Kernels at Grid and Sum
-        xxyy = np.c_[xx.ravel(), yy.ravel()]
-        # Preallocate Probability Density Output
-        zz = np.zeros((resolution*resolution))
-
+        
+        # Create Zeros Mask Image
+        mask = np.zeros((resolution,resolution))
+        
         # For Each Person in Image
         for person in range(0,len(df.columns),2):
-            # If Keypoint is Nonzero
+             # If Keypoint is Nonzero
             if df.iloc[joint][person] != 0:
-                k = multivariate_normal(mean=(df.iloc[joint][person]/std,\
-                                               df.iloc[joint][person+1]/std), cov=np.eye(2))
-                # Add Keypoint to Kernel Grid
-                zz += k.pdf(xxyy)
+                # Y Coordinate is Rows, X is Cols
+                # Offset -1 for Pixel Coordinate to Pixel Index
+                x_coord = int(np.around(df.iloc[joint][person])) - 1
+                y_coord = int(np.around(df.iloc[joint][person+1])) - 1
+                
+                # Set Radius Pixels to 0.9
+                # For Loop through Possible Radius Values
+                for radius_x in range(-radius,radius+1):
+                    for radius_y in range(-radius,radius+1):
+                        # If Current Pixel Location is Within Radius, Set Value
+                        if ((radius_x**2)+(radius_y**2)) <= (radius**2):
+                            # Make Sure Pixel is Within Image Coordinate Bounds
+                            if 0 <= (y_coord+radius_y) < (resolution) and 0 <= (x_coord+radius_x) < (resolution):
+                                mask[y_coord+radius_y][x_coord+radius_x] = 0.9
+                
+                # Set True Keypoint Pixel to 1
+                mask[y_coord][x_coord] = 1
 
-        # Rescale zz to 0-1 if Nonzero
-        if np.amax(zz) != 0:
-            zz = zz * (1/np.amax(zz))
+        # Append List with Joint Mask
+        mask_list.append(mask)
 
-        # Reshape into Output Heatmap Mask (Round to 3 Decimal)
-        heatmap_list.append(np.round(zz.reshape((resolution,resolution)), 3))
-
-    # Stack Keypoints List into Channels
-    return np.stack(heatmap_list, axis=2)
+    # Stack Keypoints Masks into Tensor
+    return np.stack(mask_list, axis=2)
 
 

@@ -1,1 +1,8 @@
+notebooks/wandb
+notebooks/.ipynb_checkpoints
+lib/.ipynb_checkpoints
+lib/__pycache__
+lib/models/.ipynb_checkpoints
+lib/models/__pycache__
+.ipynb_checkpoints
 .DS_Store
