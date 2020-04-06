@@ -1,0 +1,138 @@
+2020-04-02 23:51:10.115139: W tensorflow/core/common_runtime/bfc_allocator.cc:424] Allocator (GPU_0_bfc) ran out of memory trying to allocate 18.00MiB (rounded to 18874368).  Current allocation summary follows.
+2020-04-02 23:51:10.115197: I tensorflow/core/common_runtime/bfc_allocator.cc:894] BFCAllocator dump for GPU_0_bfc
+2020-04-02 23:51:10.115206: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (256): 	Total Chunks: 7, Chunks in use: 7. 1.8KiB allocated for chunks. 1.8KiB in use in bin. 532B client-requested in use in bin.
+2020-04-02 23:51:10.115213: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (512): 	Total Chunks: 2, Chunks in use: 2. 1.0KiB allocated for chunks. 1.0KiB in use in bin. 1.0KiB client-requested in use in bin.
+2020-04-02 23:51:10.115220: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (1024): 	Total Chunks: 7, Chunks in use: 7. 7.2KiB allocated for chunks. 7.2KiB in use in bin. 6.1KiB client-requested in use in bin.
+2020-04-02 23:51:10.115226: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (2048): 	Total Chunks: 2, Chunks in use: 2. 4.0KiB allocated for chunks. 4.0KiB in use in bin. 4.0KiB client-requested in use in bin.
+2020-04-02 23:51:10.115233: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (4096): 	Total Chunks: 2, Chunks in use: 1. 12.8KiB allocated for chunks. 6.8KiB in use in bin. 6.8KiB client-requested in use in bin.
+2020-04-02 23:51:10.115239: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-02 23:51:10.115245: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-02 23:51:10.115251: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-02 23:51:10.115256: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-02 23:51:10.115263: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (131072): 	Total Chunks: 1, Chunks in use: 1. 144.0KiB allocated for chunks. 144.0KiB in use in bin. 144.0KiB client-requested in use in bin.
+2020-04-02 23:51:10.115270: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (262144): 	Total Chunks: 3, Chunks in use: 1. 864.0KiB allocated for chunks. 288.0KiB in use in bin. 288.0KiB client-requested in use in bin.
+2020-04-02 23:51:10.115277: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (524288): 	Total Chunks: 1, Chunks in use: 1. 576.0KiB allocated for chunks. 576.0KiB in use in bin. 576.0KiB client-requested in use in bin.
+2020-04-02 23:51:10.115283: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (1048576): 	Total Chunks: 3, Chunks in use: 1. 3.38MiB allocated for chunks. 1.12MiB in use in bin. 1.12MiB client-requested in use in bin.
+2020-04-02 23:51:10.115290: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (2097152): 	Total Chunks: 1, Chunks in use: 1. 2.25MiB allocated for chunks. 2.25MiB in use in bin. 2.25MiB client-requested in use in bin.
+2020-04-02 23:51:10.115296: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (4194304): 	Total Chunks: 3, Chunks in use: 1. 13.50MiB allocated for chunks. 4.50MiB in use in bin. 4.50MiB client-requested in use in bin.
+2020-04-02 23:51:10.115303: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (8388608): 	Total Chunks: 1, Chunks in use: 1. 15.47MiB allocated for chunks. 15.47MiB in use in bin. 9.00MiB client-requested in use in bin.
+2020-04-02 23:51:10.115309: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (16777216): 	Total Chunks: 1, Chunks in use: 1. 18.00MiB allocated for chunks. 18.00MiB in use in bin. 18.00MiB client-requested in use in bin.
+2020-04-02 23:51:10.115315: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-02 23:51:10.115320: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-02 23:51:10.115333: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-02 23:51:10.115350: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-02 23:51:10.115361: I tensorflow/core/common_runtime/bfc_allocator.cc:917] Bin for 18.00MiB was 16.00MiB, Chunk State: 
+2020-04-02 23:51:10.115374: I tensorflow/core/common_runtime/bfc_allocator.cc:930] Next region of size 56800256
+2020-04-02 23:51:10.115387: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4000000 of size 256 next 1
+2020-04-02 23:51:10.115398: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4000100 of size 1280 next 2
+2020-04-02 23:51:10.115408: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4000600 of size 256 next 3
+2020-04-02 23:51:10.115418: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4000700 of size 256 next 4
+2020-04-02 23:51:10.115424: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4000800 of size 256 next 5
+2020-04-02 23:51:10.115431: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4000900 of size 256 next 6
+2020-04-02 23:51:10.115444: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4000a00 of size 1024 next 7
+2020-04-02 23:51:10.115453: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4000e00 of size 1024 next 8
+2020-04-02 23:51:10.115459: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4001200 of size 1024 next 9
+2020-04-02 23:51:10.115469: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4001600 of size 1024 next 10
+2020-04-02 23:51:10.115478: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4001a00 of size 256 next 11
+2020-04-02 23:51:10.115489: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4001b00 of size 256 next 14
+2020-04-02 23:51:10.115498: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4001c00 of size 512 next 19
+2020-04-02 23:51:10.115507: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4001e00 of size 512 next 20
+2020-04-02 23:51:10.115517: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4002000 of size 1024 next 25
+2020-04-02 23:51:10.115524: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4002400 of size 1024 next 26
+2020-04-02 23:51:10.115533: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4002800 of size 2048 next 31
+2020-04-02 23:51:10.115544: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4003000 of size 2048 next 32
+2020-04-02 23:51:10.115555: I tensorflow/core/common_runtime/bfc_allocator.cc:950] Free  at 7faba4003800 of size 6144 next 12
+2020-04-02 23:51:10.115565: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4005000 of size 6912 next 13
+2020-04-02 23:51:10.115575: I tensorflow/core/common_runtime/bfc_allocator.cc:950] Free  at 7faba4006b00 of size 294912 next 15
+2020-04-02 23:51:10.115585: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba404eb00 of size 147456 next 16
+2020-04-02 23:51:10.115595: I tensorflow/core/common_runtime/bfc_allocator.cc:950] Free  at 7faba4072b00 of size 294912 next 17
+2020-04-02 23:51:10.115606: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba40bab00 of size 294912 next 18
+2020-04-02 23:51:10.115616: I tensorflow/core/common_runtime/bfc_allocator.cc:950] Free  at 7faba4102b00 of size 1179648 next 21
+2020-04-02 23:51:10.115627: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4222b00 of size 589824 next 22
+2020-04-02 23:51:10.115637: I tensorflow/core/common_runtime/bfc_allocator.cc:950] Free  at 7faba42b2b00 of size 1179648 next 23
+2020-04-02 23:51:10.115646: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba43d2b00 of size 1179648 next 24
+2020-04-02 23:51:10.115659: I tensorflow/core/common_runtime/bfc_allocator.cc:950] Free  at 7faba44f2b00 of size 4718592 next 27
+2020-04-02 23:51:10.115670: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba4972b00 of size 2359296 next 28
+2020-04-02 23:51:10.115680: I tensorflow/core/common_runtime/bfc_allocator.cc:950] Free  at 7faba4bb2b00 of size 4718592 next 29
+2020-04-02 23:51:10.115688: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba5032b00 of size 4718592 next 30
+2020-04-02 23:51:10.115698: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba54b2b00 of size 18874368 next 33
+2020-04-02 23:51:10.115709: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 7faba66b2b00 of size 16222464 next 18446744073709551615
+2020-04-02 23:51:10.115719: I tensorflow/core/common_runtime/bfc_allocator.cc:955]      Summary of in-use Chunks by size: 
+2020-04-02 23:51:10.115733: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 7 Chunks of size 256 totalling 1.8KiB
+2020-04-02 23:51:10.115744: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 2 Chunks of size 512 totalling 1.0KiB
+2020-04-02 23:51:10.115756: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 6 Chunks of size 1024 totalling 6.0KiB
+2020-04-02 23:51:10.115766: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 1280 totalling 1.2KiB
+2020-04-02 23:51:10.115777: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 2 Chunks of size 2048 totalling 4.0KiB
+2020-04-02 23:51:10.115787: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 6912 totalling 6.8KiB
+2020-04-02 23:51:10.115796: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 147456 totalling 144.0KiB
+2020-04-02 23:51:10.115804: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 294912 totalling 288.0KiB
+2020-04-02 23:51:10.115810: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 589824 totalling 576.0KiB
+2020-04-02 23:51:10.115821: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 1179648 totalling 1.12MiB
+2020-04-02 23:51:10.115829: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 2359296 totalling 2.25MiB
+2020-04-02 23:51:10.115837: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 4718592 totalling 4.50MiB
+2020-04-02 23:51:10.115846: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 16222464 totalling 15.47MiB
+2020-04-02 23:51:10.115853: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 18874368 totalling 18.00MiB
+2020-04-02 23:51:10.115860: I tensorflow/core/common_runtime/bfc_allocator.cc:962] Sum Total of in-use chunks: 42.35MiB
+2020-04-02 23:51:10.115875: I tensorflow/core/common_runtime/bfc_allocator.cc:964] total_region_allocated_bytes_: 56800256 memory_limit_: 70123520 available bytes: 13323264 curr_region_allocation_bytes_: 140247040
+2020-04-02 23:51:10.115893: I tensorflow/core/common_runtime/bfc_allocator.cc:970] Stats: 
+Limit:                    70123520
+InUse:                    44407808
+MaxInUse:                 44407808
+NumAllocs:                     119
+MaxAllocSize:             18874368
+
+2020-04-02 23:51:10.115910: W tensorflow/core/common_runtime/bfc_allocator.cc:429] **_**__***_______*****_______************************************************************xxxxxxxxxxx
+2020-04-02 23:51:10.115959: W tensorflow/core/framework/op_kernel.cc:1655] OP_REQUIRES failed at cwise_ops_common.cc:82 : Resource exhausted: OOM when allocating tensor with shape[3,3,512,1024] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+Traceback (most recent call last):
+  File "train.py", line 134, in <module>
+    model = train(CALLBACKS)
+  File "train.py", line 73, in train
+    model = init_model()
+  File "train.py", line 42, in init_model
+    output_num = len(DESIRED_JOINTS))
+  File "/home/jupyter/thirdeye/lib/models/unet_simple.py", line 34, in unet_simple
+    conv5 = Conv2D(1024, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(pool4)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/base_layer.py", line 748, in __call__
+    self._maybe_build(inputs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/base_layer.py", line 2116, in _maybe_build
+    self.build(input_shapes)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/layers/convolutional.py", line 158, in build
+    dtype=self.dtype)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/base_layer.py", line 446, in add_weight
+    caching_device=caching_device)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/training/tracking/base.py", line 744, in _add_variable_with_custom_getter
+    **kwargs_for_getter)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/base_layer_utils.py", line 142, in make_variable
+    shape=variable_shape if variable_shape else None)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/variables.py", line 258, in __call__
+    return cls._variable_v1_call(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/variables.py", line 219, in _variable_v1_call
+    shape=shape)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/variables.py", line 197, in <lambda>
+    previous_getter = lambda **kwargs: default_variable_creator(None, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/variable_scope.py", line 2596, in default_variable_creator
+    shape=shape)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/variables.py", line 262, in __call__
+    return super(VariableMetaclass, cls).__call__(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py", line 1411, in __init__
+    distribute_strategy=distribute_strategy)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py", line 1542, in _init_from_args
+    initial_value() if init_from_fn else initial_value,
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/base_layer_utils.py", line 122, in <lambda>
+    init_val = lambda: initializer(shape, dtype=dtype)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/init_ops_v2.py", line 419, in __call__
+    return self._random_generator.truncated_normal(shape, 0.0, stddev, dtype)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/init_ops_v2.py", line 797, in truncated_normal
+    shape=shape, mean=mean, stddev=stddev, dtype=dtype, seed=self.seed)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/random_ops.py", line 176, in truncated_normal
+    mul = rnd * stddev_tensor
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/math_ops.py", line 902, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/math_ops.py", line 1201, in _mul_dispatch
+    return gen_math_ops.mul(x, y, name=name)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/gen_math_ops.py", line 6122, in mul
+    _ops.raise_from_not_ok_status(e, name)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/framework/ops.py", line 6606, in raise_from_not_ok_status
+    six.raise_from(core._status_to_exception(e.code, message), None)
+  File "<string>", line 3, in raise_from
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[3,3,512,1024] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:Mul] name: conv2d_8/kernel/Initializer/truncated_normal/mul/

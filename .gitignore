@@ -1,3 +1,4 @@
+trainer/wandb
 notebooks/wandb
 notebooks/.ipynb_checkpoints
 lib/.ipynb_checkpoints

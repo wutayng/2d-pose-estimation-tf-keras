@@ -1,0 +1,3 @@
+{"epoch": 0, "loss": 0.1407284607011088, "Precision": 0.0022077064495533705, "Recall": 0.0016263268189504743, "val_loss": 0.012952651272738171, "val_Precision": 0.0, "val_Recall": 0.0, "_runtime": 350.117196559906, "_timestamp": 1585918762.246998, "_step": 0}
+{"epoch": 1, "loss": 0.013063627477601984, "Precision": 0.0, "Recall": 0.0, "val_loss": 0.012663943868290672, "val_Precision": 0.0, "val_Recall": 0.0, "_runtime": 675.8179783821106, "_timestamp": 1585919087.94778, "_step": 1}
+{"epoch": 2, "loss": 0.012864002692401719, "Precision": 0.0, "Recall": 0.0, "_runtime": 745.7093994617462, "_timestamp": 1585919157.839201, "_step": 2}

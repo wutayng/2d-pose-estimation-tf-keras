@@ -65,10 +65,10 @@ class h5_generator(Sequence) :
         keypoints_list = []
         # Loop Through Batch
         for i in range(0, self.batch_size):
-            img_list.append(self.h5_data[self.batches[idx][i]]['img'][:] / 255)
+            img_list.append(np.float32(self.h5_data[self.batches[idx][i]]['img'][:] / 255))
             df = pd.DataFrame(data=self.h5_data[self.batches[idx][i]]['keypoints'][:])
-            keypoints_list.append(dataframe_to_mask(df, self.joint_input_indices, \
-                                                    self.image_resolution, self.radius))
+            keypoints_list.append(np.float32(dataframe_to_mask(df, self.joint_input_indices, \
+                                                    self.image_resolution, self.radius)))
 
         # Stack X List into Tensor
         batch_x = np.stack(img_list, axis=0)
@@ -76,6 +76,29 @@ class h5_generator(Sequence) :
         batch_y = np.stack(keypoints_list, axis=0)
 
         return batch_x, batch_y
+    
+    def load_data(self,idx,data_choice):
+        """
+        Fetch Either X or Y Tensor
+        args:
+            - idx           : batch index
+            - data_choice   : either 0 or 1. 
+                              0 Returns X Data, 1 Returns Y Data
+                        
+        return              : tensor output
+        """
+        out_list = []
+        for i in range(0, self.batch_size):
+            if data_choice == 0:
+                out_list.append(np.float32(self.h5_data[self.batches[idx][i]]['img'][:] / 255))
+            elif data_choice == 1:
+                df = pd.DataFrame(data=self.h5_data[self.batches[idx][i]]['keypoints'][:])
+                out_list.append(np.float32(dataframe_to_mask(df, self.joint_input_indices, \
+                                                    self.image_resolution, self.radius)))
+            else:
+                raise Exception('Input Error: Unavalible Data Choice')
+        
+        return np.stack(out_list, axis=0)
 
     def __next__(self):
         if self.n >= self.max:

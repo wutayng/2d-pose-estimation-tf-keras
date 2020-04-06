@@ -1,0 +1,64 @@
+2020-04-02 15:58:47.165260: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-02 15:58:47.201149: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:47.201922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-04-02 15:58:47.201993: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-02 15:58:47.202088: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-02 15:58:47.203958: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-04-02 15:58:47.204343: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-04-02 15:58:47.206290: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-04-02 15:58:47.207399: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-04-02 15:58:47.207481: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-02 15:58:47.207611: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:47.208380: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:47.209066: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-04-02 15:58:47.217706: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz
+2020-04-02 15:58:47.218549: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x563c1313cc80 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-02 15:58:47.218574: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-04-02 15:58:47.322566: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:47.323266: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x563c131a2b70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-04-02 15:58:47.323309: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-04-02 15:58:47.323617: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:47.324238: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-04-02 15:58:47.324347: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-02 15:58:47.324420: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-04-02 15:58:47.324461: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-04-02 15:58:47.324510: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-04-02 15:58:47.324538: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-04-02 15:58:47.324557: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-04-02 15:58:47.324573: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-02 15:58:47.324684: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:47.325464: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:47.326085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-04-02 15:58:47.326169: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-04-02 15:58:48.263119: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-02 15:58:48.263173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0 
+2020-04-02 15:58:48.263182: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N 
+2020-04-02 15:58:48.263475: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:48.264142: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-04-02 15:58:48.264833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14046 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+Total Memory Allocation Before Training: 71.329783808
+2020-04-02 16:09:18.900319: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 25165824000 exceeds 10% of system memory.
+Fatal Python error: Segmentation fault
+
+Current thread 0x00007fa7999b5580 (most recent call first):
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 96 in convert_to_eager_tensor
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 266 in _constant_impl
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/framework/constant_op.py", line 258 in constant
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/framework/tensor_conversion_registry.py", line 52 in _default_conversion_function
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/framework/ops.py", line 1314 in convert_to_tensor
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/data/util/structure.py", line 113 in normalize_element
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/data/ops/dataset_ops.py", line 2765 in __init__
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/data/ops/dataset_ops.py", line 566 in from_tensors
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/data_adapter.py", line 383 in slice_inputs
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/data_adapter.py", line 357 in __init__
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 706 in _process_inputs
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 614 in _process_training_inputs
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 235 in fit
+  File "/opt/conda/lib/python3.7/site-packages/wandb/keras/__init__.py", line 112 in new_v2
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training.py", line 819 in fit
+  File "train.py", line 110 in load_and_train
+  File "train.py", line 149 in <module>

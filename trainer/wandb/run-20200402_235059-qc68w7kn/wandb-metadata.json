@@ -1,0 +1,29 @@
+{
+    "root": "/home/jupyter/thirdeye",
+    "program": "train.py",
+    "git": {
+        "remote": "https://wutayng:IK3iB4lQLuoW@github.com/wutayng/thirdeye.git",
+        "commit": "77434a8de03d8f6c949136baf0019f5c9f3ce654"
+    },
+    "email": null,
+    "codePath": "trainer/train.py",
+    "startedAt": "2020-04-02T23:50:59.118456",
+    "host": "thirdeye-100gb",
+    "username": "jupyter",
+    "executable": "/opt/conda/bin/python",
+    "os": "Linux-4.9.0-12-amd64-x86_64-with-debian-9.12",
+    "python": "3.7.6",
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": "10.1.243",
+    "args": [],
+    "state": "failed",
+    "jobType": null,
+    "mode": "run",
+    "name": "5k_b16_trainer",
+    "notes": "5k Sample Test from Trainer Script",
+    "project": "unet-2d-pose",
+    "heartbeatAt": "2020-04-02T23:51:10.726610",
+    "exitcode": 1
+}

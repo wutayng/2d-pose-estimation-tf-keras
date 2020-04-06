@@ -1,0 +1,28 @@
+WARNING:tensorflow:From train.py:85: Model.fit_generator (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use Model.fit, which supports generators.
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 4 steps, validate for 2 steps
+Epoch 1/2
+2020-04-03 17:56:26.466043: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 17:56:28.431582: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+1/4 [======>.......................] - ETA: 42s - loss: 0.7240 - precision: 0.0031 - recall: 1.00002/4 [==============>...............] - ETA: 14s - loss: 30.8156 - precision: 0.0028 - recall: 0.77623/4 [=====================>........] - ETA: 5s - loss: 20.6974 - precision: 0.0022 - recall: 0.8347 4/4 [==============================] - 18s 4s/step - loss: 15.6346 - precision: 0.0026 - recall: 0.8877 - val_loss: 0.2401 - val_precision: 0.0018 - val_recall: 0.6321
+Epoch 2/2
+2020-04-03 17:56:42.435013: W tensorflow/core/kernels/data/generator_dataset_op.cc:103] Error occurred when finalizing GeneratorDataset iterator: Cancelled: Operation was cancelled
+1/4 [======>.......................] - ETA: 3s - loss: 0.1940 - precision: 0.0021 - recall: 0.47122/4 [==============>...............] - ETA: 2s - loss: 0.1533 - precision: 0.0018 - recall: 0.30403/4 [=====================>........] - ETA: 0s - loss: 0.2305 - precision: 0.0017 - recall: 0.18502020-04-03 17:56:45.968735: W tensorflow/core/kernels/data/generator_dataset_op.cc:103] Error occurred when finalizing GeneratorDataset iterator: Cancelled: Operation was cancelled
+4/4 [==============================] - 4s 1s/step - loss: 0.2008 - precision: 0.0014 - recall: 0.1400 - val_loss: 0.0812 - val_precision: 3.1888e-04 - val_recall: 0.0337
+2020-04-03 17:56:46.773291: W tensorflow/core/kernels/data/generator_dataset_op.cc:103] Error occurred when finalizing GeneratorDataset iterator: Cancelled: Operation was cancelled
+2020-04-03 17:56:46.965443: W tensorflow/core/kernels/data/generator_dataset_op.cc:103] Error occurred when finalizing GeneratorDataset iterator: Cancelled: Operation was cancelled
+1/1 [==============================] - 1s 1s/sample
+Max Val of Prediction Tensor: 0.5185493230819702
+2020-04-03 17:56:50.271965: W tensorflow/python/util/util.cc:319] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /opt/conda/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1786: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.

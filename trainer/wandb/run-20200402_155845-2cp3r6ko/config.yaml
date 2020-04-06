@@ -1,0 +1,50 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.8.31
+    code_path: code/trainer/train.py
+    framework: tensorflow
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.6
+batch_size:
+  desc: null
+  value: 32
+data:
+  desc: null
+  value: COCO
+decay:
+  desc: null
+  value: Adam Standard
+epochs:
+  desc: null
+  value: 5
+img_resolution:
+  desc: null
+  value: 256
+keypoint_radius:
+  desc: null
+  value: 5
+loss:
+  desc: null
+  value: bce_logisticloss
+lr:
+  desc: null
+  value: Adam Standard
+model:
+  desc: null
+  value: UNet
+optimizer:
+  desc: null
+  value: <tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x7fa76c394d10>
+samples:
+  desc: null
+  value: 8000
+val_samples:
+  desc: null
+  value: 2000
+window_sz:
+  desc: null
+  value: 20
