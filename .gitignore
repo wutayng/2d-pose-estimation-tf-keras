@@ -1,3 +1,4 @@
+trainer/__pycache__
 trainer/wandb
 notebooks/wandb
 notebooks/.ipynb_checkpoints
