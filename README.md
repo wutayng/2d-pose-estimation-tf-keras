@@ -2,14 +2,14 @@
 
 #### Finished Model -- `Full_COCO_Train`
 
-#### Look in [WandB](https://app.wandb.ai/wjtaylor/unet-2d-pose?workspace) for all Model Training/Tracking Info\
+#### Look in [WandB](https://app.wandb.ai/wjtaylor/unet-2d-pose?workspace) for all Model Training / Tracking Info
 
-![Inference Image](https://github.com/wutayng/thirdeye/assets/heatmap-inference.png)
-![Training Graphs](https://github.com/wutayng/thirdeye/assets/UNet=2DPose_WandB.png)
+<div style="text-align:center; width: 300px;"><img src="https://github.com/wutayng/thirdeye/blob/master/assets/heatmap-inference.png" /></div>
+<div style="text-align:center; width: 300px;"><img src="https://github.com/wutayng/thirdeye/blob/master/assets/UNet=2DPose_WandB.png" /></div>
 
-# To serve the model here (/SavedModels) via a flask web API, check out https://github.com/wutayng/flask-keras-server
+## To serve the model here (/SavedModels) via a flask web API, check out [flask-keras-server](https://github.com/wutayng/flask-keras-server)
 
-## process-coco
+## Process-coco
 
 Here is a script to convert COCO images and annotations into h5 files containing the images and keypoint annotation coordinates. h5 files must be created to use anything else in this repo (besides the SavedModel)!
 
