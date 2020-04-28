@@ -6,8 +6,8 @@
 
 ### Example Output Heatmaps
 
-<div><img width="250" src="https://github.com/wutayng/thirdeye/blob/master/assets/heatmap-inference.png" />
-<img width="250" src="https://github.com/wutayng/thirdeye/blob/master/assets/beach_running_inference.gif" />
+<div><img width="450" src="https://github.com/wutayng/thirdeye/blob/master/assets/heatmap-inference.png" />
+<img width="400" src="https://github.com/wutayng/thirdeye/blob/master/assets/beach_running_inference.gif" />
 </div>
 
 <div><img src="https://github.com/wutayng/thirdeye/blob/master/assets/UNet-2DPose_WandB.png" /></div>
