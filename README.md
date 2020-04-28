@@ -6,11 +6,11 @@
 
 ### Example Output Heatmaps
 
-<div><img width="450" src="https://github.com/wutayng/thirdeye/blob/master/assets/heatmap-inference.png" />
-<img width="400" src="https://github.com/wutayng/thirdeye/blob/master/assets/beach_running_inference.gif" />
+<div><img width="450" src="https://github.com/wutayng/2d-pose-estimation-tf-keras/blob/master/assets/heatmap-inference.png" />
+<img width="400" src="https://github.com/wutayng/2d-pose-estimation-tf-keras/blob/master/assets/beach_running_inference.gif" />
 </div>
 
-<div><img src="https://github.com/wutayng/thirdeye/blob/master/assets/UNet-2DPose_WandB.png" /></div>
+<div><img src="https://github.com/wutayng/2d-pose-estimation-tf-keras/blob/master/assets/UNet-2DPose_WandB.png" /></div>
 
 ## To serve the model here (/SavedModels) via a flask web API, check out [flask-keras-server](https://github.com/wutayng/flask-keras-server)
 
@@ -45,6 +45,7 @@ Look here for some more implementation details about troubleshooting and lessons
 
 ## Attributions
 
+-   [COCO Dataset](http://cocodataset.org/)
 -   [Towards Accurate Multi-person Pose Estimation in the Wild](https://arxiv.org/pdf/1701.01779.pdf)
     -- Loss and Non-Max Suppression
 -   [UNet Implementation by zhixuhao](https://github.com/zhixuhao/unet)
