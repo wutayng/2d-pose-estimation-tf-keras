@@ -4,8 +4,8 @@
 
 #### Look in [WandB](https://app.wandb.ai/wjtaylor/unet-2d-pose?workspace) for all Model Training / Tracking Info
 
-<div style="text-align:center; width: 300px;"><img src="https://github.com/wutayng/thirdeye/blob/master/assets/heatmap-inference.png" /></div>
-<div style="text-align:center; width: 300px;"><img src="https://github.com/wutayng/thirdeye/blob/master/assets/UNet=2DPose_WandB.png" /></div>
+<div style="text-align:center; width: 200px;"><img src="https://github.com/wutayng/thirdeye/blob/master/assets/heatmap-inference.png" /></div>
+<div style="text-align:center; width: 300px;"><img src="https://github.com/wutayng/thirdeye/blob/master/assets/UNet-2DPose_WandB.png" /></div>
 
 ## To serve the model here (/SavedModels) via a flask web API, check out [flask-keras-server](https://github.com/wutayng/flask-keras-server)
 
